@@ -19,7 +19,7 @@ const readCSV = (filePath) => {
 }
 
 const saveToFile = (pathName, data) => {
-    let x = JSON.stringify(data, "unknown", 3)
+    let x = JSON.stringify(data, null, 2)
     fs.writeFileSync(pathName,x )
 }
 
