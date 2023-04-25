@@ -1,12 +1,12 @@
 const fs = require('fs');
 
 
-let users = [];
-
-const readCSV = async (filePath) => {
+const readCSV = (filePath) => {
     let localUsers = fs.readFileSync(filePath, 'utf8')
     const toArray = localUsers.split('\n')
     let headers = toArray[0].split(',')
+
+    let users = []
     for (let i = 1; i < toArray.length; i++) {
         let items = toArray[i].split(',')
         let user = {}
@@ -15,7 +15,9 @@ const readCSV = async (filePath) => {
         }
         users.push(user)
     }// O(n^2)
+    return users
 }
+
 const saveToFile = (pathName, users) => {
     let usersFileAsCSV = ""
     let headers = Object.keys(users[0])
