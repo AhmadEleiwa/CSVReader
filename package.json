@@ -1,0 +1,19 @@
+{
+  "name": "csvreader",
+  "version": "1.0.0",
+  "description": "The CSVReader is an app in nodejs which read CSV File into JSON object",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadEleiwa/CSVReader.git"
+  },
+  "author": "Ahmad Ilawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadEleiwa/CSVReader/issues"
+  },
+  "homepage": "https://github.com/AhmadEleiwa/CSVReader#readme"
+}
